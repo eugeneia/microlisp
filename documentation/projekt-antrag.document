@@ -1,0 +1,166 @@
+< Projektbezeichnung
+
+ Entwicklung von einer funktionalen Entwicklungsumgebung für die
+ MicroTouch Platform.
+
+>
+
+< Projektbeschreibung
+
+ < Projektanlass
+
+  Für die MicroTouch Platform soll eine Entwicklungsumgebung geschaffen
+  werden, die die agile Entwicklung von Anwendungen erleichtert. Dazu
+  soll ein Lisp-Dialekt "MicroLisp" implementiert werden. MicroLisp soll
+  automatische Speicherverwaltung unterstützen und axiomatische
+  Operatoren für platformspeziefische Funktionen bereit stellen.
+
+  MicroLisp soll von einem Kompilierer in C übersetzt werden und von da
+  aus mit der AVR Erweiterung für die GNU Compiler Collection in native
+  Maschinenanweisungen für die Atmel AVR Platform übersetzt werden.
+  Ausserdem soll die Entwicklungsumgebung Funktionen bereitstellen, die
+  das Testen von MicroTouch-Programmen auf Desktop-Computern erleichtert.
+
+  Die einzelnen Systembestandteile sind:
+
+  + Analysator
+  + Kompilierer
+  + Emulator
+  + Laufzeitumgebung
+
+ >
+
+ < Ist-Analyse / Ausgangssituation
+
+  Es gibt bereits ein Rahmenwerk für die Entwicklung für die
+  MicroTouch-Platform. Diese ist jedoch lediglich auf die Entwicklung von
+  C++-Programmen ausgelegt. Da die Entwicklung von C++-Programmen
+  aufwendig ist und spezialisierte Fachkräfte benötigt, soll aufgrund von
+  Kosten/Nutzenüberlegungen eine Sprache mit höherem Abstraktionsgrad
+  entwickelt werden. Eine Kostennutzenanalyse soll am Ende des Projekts
+  überprüfen, ob die resultierende Entwicklungsumgebung die Erwartungen
+  an die Produktivitätssteigerung erfüllt.
+
+  Um die Entwicklung der benötigten Software-Komponenten zu
+  beschleunigen, soll Common Lisp als Basis für den Kompilierer und den
+  Emulator eingesetzt werden. Weil Common Lisp auch ein Lisp-Dialekt ist
+  wird erwartet, dass viele Komponenten des Systems, wie der Emulator und
+  der lexikalische Scanner mit geringem Aufwand implementiert werden
+  können.
+
+ >
+
+ < Projektziele
+
+  Konstruktion eines Rahmenwerks, die die Entwicklung von Programmen für
+  die MicroTouch-Platform, auf Basis einer abstrakten Programmiersprache,
+  erleichtert.
+
+  Betrachtung und Abwägung des Verhältnisses zwischen Kosten und Nutzen
+  des resultierenden Produkts, hinsichtlich des Entwicklungsaufwands des
+  Rahmenwerks und auf diesem basierender Anwendungen.
+
+ >
+
+ < Soll-Konzept: Was soll am Ende des Projekts erreicht sein?
+
+  Nach Beendigung des Projektes soll ein Funktionstüchtiger Kompilierer
+  in der Lage sein, MicroLisp-Programme in fehlerfreien C-Quelltext mit
+  automatisierter Speicherverwaltung zu übersetzen. Die MicroLisp Sprache
+  soll den Lambda-Calculus implementieren und in der Lage sein
+  platformspeziefische Funktionen wie Ein- und Ausgabe auszuführen.
+  Zusätzlich soll ein Emulator die Entwicklung von MicroLisp-Programmen
+  durch interaktive Evaluation von MicroLisp-Ausdrücken unterstützen.
+
+ >
+
+ < Welche Anforderungen müssen erfüllt sein?
+
+  Benötigt wird ein Computer mit funktionstüchtigen Installationen der
+  GNU Compiler Collection und einer Konformen Common Lisp Implementation
+  wie zum Beispiel "Steel Bank Common Lisp".
+
+  Weitere Anforderungen existieren nicht, da es sich bei der Zielsprache
+  des Kompilierers um portables C handelt.
+
+ >
+
+ < Welche Einschränkungen müssen berücksichtigt werden?
+
+   Alle Komponenten der zu entwickelnden Software dürfen nur
+   standardisierte Funktionen von Common Lisp und der
+   C-Standardbibliothek verwenden um die Portabilität sicher zu stellen.
+
+ >
+
+ < Was ist zur Erfüllung der Zielsetzung erforderlich?
+
+  Damit die Entwicklungsumgebung den Ansprüchen genügt, müssen mehrere
+  Software-Komponenten entwickelt werden. Eine Komponente, der
+  Analysator, muss eine MicroLisp-Quelldatei analysieren und einen
+  equivalenten abstrakten Quellbaum erzeugen. Eine weitere Komponente
+  soll so genannte "Makros", Funktionen die vordefinierte
+  Sprachkonstrukte in Kombinationen der Basisoperatoren übersetzen,
+  erkennen und auflösen.
+
+  Die Kompilationskomponente soll den aufgelösten Quellbaum in
+  C-Quellprogramme übersetzen. Um die abstrakten Funktionen der
+  MicroLisp-Sprache zu realisieren muss eine Laufzeitumgebung in C
+  entwickelt werden. Diese soll automatische Speicherverwaltung,
+  grundlegende Funktionen der C-Standardbibliothek, wie Dateiein- und
+  Ausgabe, so wie die Basisoperatoren und Datentypen der Sprache
+  implementieren.
+
+  Die Emulationskomponente soll einen MicroLisp-Ausdruck mit Hilfe der
+  Common Lisp Umgebung interpretieren und auswerten ohne die
+  Kompilationskomponente zu durchlaufen.
+
+  Die Sprache muss, mit Hilfe von Makros, mit Syntaxkonstrukten für
+  häufig verwendete Funktionen angereichert werden, die die
+  Programmentwicklung erleichtern.
+
+  Es muss angesichts einer Kosten/Nutzenanalyse geprüft werden ob die
+  resultierende Entwicklungsumgebung den erwarteten Anforderungen
+  entspricht und die erhoffte Produktivitätssteigerung beim Entwickeln
+  von Anwendungen ermöglicht.
+
+  Um die Entwicklungsumgebung für die Anwendung für den Einsatz im
+  Produktivumfeld tauglich zu machen, müssen das System und seine
+  Komponenten dokumentiert werden.
+
+ >
+
+ < Werkzeuge
+
+  Desktop-Computer, Steel Bank Common Lisp, GNU Compiler Collection.
+
+ >
+
+>
+
+< Projektphasen mit Zeitplanung in Stunden
+
+ #table Zeitplanung des Projekts.#
+ | Teilaufgabe                                                 | Dauer
+ | Planung und Entwicklung der benötigten Software-Komponenten | 45
+ | Planung von Systemarchitektur und Implementationsdetails    |  7
+ | Entwicklung des Analysators                                 |  3
+ | Entwicklung der Emulationskomponente                        |  5
+ | Anreicherung der Sprache mit Funktionen und Makros          |  5
+ | Entwicklung der C-Laufzeitumgebung                          | 15
+ | Entwicklung der Kompilationskomponente                      | 10
+ | Testen der resultierenden Entwicklungsumgebung              | 15
+ | Planung des Tests auf Funktionsumfang und Funktionalität    |  1
+ | Entwicklung der Test-Suite und Durchführung des Tests       |  3
+ | Dokumentation der Testergebnisse                            |  1
+ | Planung des Tests auf Produktivitätssteigerung              |  1
+ | Entwicklung einer Testanwendung, in MicroLisp und in C      |  5
+ | Durchführung eines vergleichenden Performance-Tests         |  1
+ | Dokumentation der unterschiede bei der Entwicklung und der Performance-Testergebnisse | 3
+ | Dokumentation der Entwicklungsumgebung und seiner Komponenten | 10
+ | Planung der Dokumentationsstruktur                          |  1
+ | Verfassen der Dokumentation                                 |  8
+ | Überprüfung der Dokumentation auf Korrektheit               |  1
+ | Gesamtdauer                                                 | 70
+
+>

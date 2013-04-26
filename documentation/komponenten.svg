@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="40cm" height="27cm" viewBox="244 127 793 527" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ffffff" points="287.293,128.532 362.593,128.532 374.593,140.532 374.593,242.532 287.293,242.532 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="287.293,128.532 362.593,128.532 374.593,140.532 374.593,242.532 287.293,242.532 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="362.593,128.532 362.593,140.532 374.593,140.532 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="294.293" y="153.432">
+      <tspan x="294.293" y="153.432"></tspan>
+      <tspan x="294.293" y="169.432">MicroLisp</tspan>
+      <tspan x="294.293" y="185.432">Quelltext</tspan>
+      <tspan x="294.293" y="201.432"></tspan>
+      <tspan x="294.293" y="217.432"></tspan>
+      <tspan x="294.293" y="233.432"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="521.25" y="381.75" width="101.45" height="81.05"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="521.25" y="381.75" width="101.45" height="81.05"/>
+    <rect style="fill: #ffffff" x="501.25" y="401.275" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="501.25" y="401.275" width="40" height="14"/>
+    <rect style="fill: #ffffff" x="501.25" y="429.275" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="501.25" y="429.275" width="40" height="14"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="549.25" y="407.65">
+      <tspan x="549.25" y="407.65"></tspan>
+      <tspan x="549.25" y="423.65">Emulator</tspan>
+      <tspan x="549.25" y="439.65"></tspan>
+      <tspan x="549.25" y="455.65"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="520.586,523.496 611.286,523.496 623.286,535.496 623.286,653.496 520.586,653.496 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.586,523.496 611.286,523.496 623.286,535.496 623.286,653.496 520.586,653.496 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="611.286,523.496 611.286,535.496 623.286,535.496 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="527.586" y="548.396">
+      <tspan x="527.586" y="548.396"></tspan>
+      <tspan x="527.586" y="564.396">Standard-</tspan>
+      <tspan x="527.586" y="580.396">bibliothek</tspan>
+      <tspan x="527.586" y="596.396">(Funktionen</tspan>
+      <tspan x="527.586" y="612.396">und Macros)</tspan>
+      <tspan x="527.586" y="628.396"></tspan>
+      <tspan x="527.586" y="644.396"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="274.025" y="289.2" width="113.85" height="81.05"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="274.025" y="289.2" width="113.85" height="81.05"/>
+    <rect style="fill: #ffffff" x="254.025" y="308.725" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254.025" y="308.725" width="40" height="14"/>
+    <rect style="fill: #ffffff" x="254.025" y="336.725" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254.025" y="336.725" width="40" height="14"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="302.025" y="315.1">
+      <tspan x="302.025" y="315.1"></tspan>
+      <tspan x="302.025" y="331.1">Analysator</tspan>
+      <tspan x="302.025" y="347.1"></tspan>
+      <tspan x="302.025" y="363.1"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="265.1" y="440.3" width="131.8" height="81.05"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="265.1" y="440.3" width="131.8" height="81.05"/>
+    <rect style="fill: #ffffff" x="245.1" y="459.825" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="245.1" y="459.825" width="40" height="14"/>
+    <rect style="fill: #ffffff" x="245.1" y="487.825" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="245.1" y="487.825" width="40" height="14"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="293.1" y="466.2">
+      <tspan x="293.1" y="466.2"></tspan>
+      <tspan x="293.1" y="482.2">Macrosystem</tspan>
+      <tspan x="293.1" y="498.2"></tspan>
+      <tspan x="293.1" y="514.2"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="699.8" y="381.4" width="120.2" height="81.05"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="699.8" y="381.4" width="120.2" height="81.05"/>
+    <rect style="fill: #ffffff" x="679.8" y="400.925" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="679.8" y="400.925" width="40" height="14"/>
+    <rect style="fill: #ffffff" x="679.8" y="428.925" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="679.8" y="428.925" width="40" height="14"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="727.8" y="407.3">
+      <tspan x="727.8" y="407.3"></tspan>
+      <tspan x="727.8" y="423.3">Kompilierer</tspan>
+      <tspan x="727.8" y="439.3"></tspan>
+      <tspan x="727.8" y="455.3"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="902.119" y="549.478" width="112.8" height="97.05"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="902.119" y="549.478" width="112.8" height="97.05"/>
+    <rect style="fill: #ffffff" x="882.119" y="577.003" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="882.119" y="577.003" width="40" height="14"/>
+    <rect style="fill: #ffffff" x="882.119" y="605.003" width="40" height="14"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="882.119" y="605.003" width="40" height="14"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="930.119" y="575.378">
+      <tspan x="930.119" y="575.378"></tspan>
+      <tspan x="930.119" y="591.378">Laufzeit-</tspan>
+      <tspan x="930.119" y="607.378">umgebung</tspan>
+      <tspan x="930.119" y="623.378"></tspan>
+      <tspan x="930.119" y="639.378"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="524.4,199.2 607.4,199.2 619.4,211.2 619.4,313.2 524.4,313.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="524.4,199.2 607.4,199.2 619.4,211.2 619.4,313.2 524.4,313.2 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="607.4,199.2 607.4,211.2 619.4,211.2 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="531.4" y="224.1">
+      <tspan x="531.4" y="224.1"></tspan>
+      <tspan x="531.4" y="240.1">Abstrakter</tspan>
+      <tspan x="531.4" y="256.1">Syntaxbaum</tspan>
+      <tspan x="531.4" y="272.1"></tspan>
+      <tspan x="531.4" y="288.1"></tspan>
+      <tspan x="531.4" y="304.1"></tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="396.9,480.825 460.65,480.825 460.65,256.2 519.928,256.2 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="512.164,261.2 522.164,256.2 512.164,251.2 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="911,365 994,365 1006,377 1006,479 911,479 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="911,365 994,365 1006,377 1006,479 911,479 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="994,365 994,377 1006,377 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="918" y="389.9">
+      <tspan x="918" y="389.9"></tspan>
+      <tspan x="918" y="405.9"></tspan>
+      <tspan x="918" y="421.9">C-Programm</tspan>
+      <tspan x="918" y="437.9"></tspan>
+      <tspan x="918" y="453.9"></tspan>
+      <tspan x="918" y="469.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="820,421.925 865.5,421.925 865.5,422 906.528,422 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="898.764,427 908.764,422 898.764,417 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="342.875" y="274">
+    <tspan x="342.875" y="274">liest</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="343.25" y="390">
+    <tspan x="343.25" y="390">übergibt</tspan>
+    <tspan x="343.25" y="406">vorläufigen</tspan>
+    <tspan x="343.25" y="422">Syntaxbaum</tspan>
+    <tspan x="343.25" y="438"></tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="468.25" y="345">
+    <tspan x="468.25" y="345">produziert</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="571.975,462.8 571.975,493.148 571.936,493.148 571.936,519.024 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="566.936,511.26 571.936,521.26 576.936,511.26 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="330.95,289.2 330.95,265.866 330.943,265.866 330.943,247.004 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="335.943,254.768 330.943,244.768 325.943,254.768 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="331,521.35 331,588.496 516.114,588.496 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="508.35,593.496 518.35,588.496 508.35,583.496 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="344.25" y="558">
+    <tspan x="344.25" y="558">bezieht</tspan>
+    <tspan x="344.25" y="574">Makrofunktionen</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="571.975,381.75 571.975,347.475 571.9,347.475 571.9,317.672 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="576.9,325.436 571.9,315.436 566.9,325.436 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="581.25" y="357">
+    <tspan x="581.25" y="357">interpretiert</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="582.25" y="491">
+    <tspan x="582.25" y="491">bezieht</tspan>
+    <tspan x="582.25" y="507">Funktionen</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="759.9,381.4 759.9,256.2 623.872,256.2 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="631.636,251.2 621.636,256.2 631.636,261.2 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="768.25" y="314">
+    <tspan x="768.25" y="314">übersetzt</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="965.495" y="506.307">
+    <tspan x="965.495" y="506.307">benutzt</tspan>
+    <tspan x="965.495" y="522.307">Funktionen</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="830.25" y="412">
+    <tspan x="830.25" y="412">produziert</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="759.9,462.45 759.9,588.496 627.758,588.496 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="635.522,583.496 625.522,588.496 635.522,593.496 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="768.25" y="518">
+    <tspan x="768.25" y="518">bezieht</tspan>
+    <tspan x="768.25" y="534">Funktionen</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="958.5,479 958.5,514.239 958.519,514.239 958.519,545.006 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="953.519,537.242 958.519,547.242 963.519,537.242 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="965.25" y="514">
+    <tspan x="965.25" y="514"></tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="330.95,370.25 330.95,405.275 331,405.275 331,435.828 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="326,428.064 331,438.064 336,428.064 "/>
+  </g>
+</svg>

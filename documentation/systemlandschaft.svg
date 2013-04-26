@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="6cm" viewBox="485 284 393 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="486.927" y="317.997" width="84.1" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="486.927" y="317.997" width="84.1" height="60"/>
+    <rect style="fill: #ffffff" x="486.927" y="299.997" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="486.927" y="299.997" width="30" height="18"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="492.927" y="336.047">
+      <tspan x="492.927" y="336.047"></tspan>
+      <tspan x="492.927" y="352.047">MicroLisp</tspan>
+      <tspan x="492.927" y="368.047"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="492.121" y="422.806" width="73.75" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="492.121" y="422.806" width="73.75" height="60"/>
+    <rect style="fill: #ffffff" x="492.121" y="404.806" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="492.121" y="404.806" width="30" height="18"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="498.121" y="440.856">
+      <tspan x="498.121" y="440.856"></tspan>
+      <tspan x="498.121" y="456.856">   SBCL  </tspan>
+      <tspan x="498.121" y="472.856"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="714.137" y="317.999" width="70.05" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="714.137" y="317.999" width="70.05" height="60"/>
+    <rect style="fill: #ffffff" x="714.137" y="299.999" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="714.137" y="299.999" width="30" height="18"/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Roman Bold;font-style:normal" x="720.137" y="336.049">
+      <tspan x="720.137" y="336.049"></tspan>
+      <tspan x="720.137" y="352.049">   GCC   </tspan>
+      <tspan x="720.137" y="368.049"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="618.385,314.994 655.185,314.994 667.185,326.994 667.185,380.994 618.385,380.994 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="618.385,314.994 655.185,314.994 667.185,326.994 667.185,380.994 618.385,380.994 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="655.185,314.994 655.185,326.994 667.185,326.994 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="625.385" y="339.894">
+      <tspan x="625.385" y="339.894"></tspan>
+      <tspan x="625.385" y="355.894">    </tspan>
+      <tspan x="625.385" y="371.894"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="828.889,315.005 865.689,315.005 877.689,327.005 877.689,381.005 828.889,381.005 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="828.889,315.005 865.689,315.005 877.689,327.005 877.689,381.005 828.889,381.005 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="865.689,315.005 865.689,327.005 877.689,327.005 "/>
+    <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Latin Modern Mono Prop Light;font-style:normal;font-weight:normal" x="835.889" y="339.905">
+      <tspan x="835.889" y="339.905"></tspan>
+      <tspan x="835.889" y="355.905">    </tspan>
+      <tspan x="835.889" y="371.905"></tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="571.027,347.997 594.706,347.997 594.706,347.994 613.912,347.994 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="606.148,352.994 616.148,347.994 606.148,342.994 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="714.137,347.999 690.661,347.999 690.661,347.994 671.657,347.994 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="679.421,342.994 669.421,347.994 679.421,352.994 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="528.977,377.997 528.977,400.402 528.996,400.402 528.996,418.334 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523.996,410.57 528.996,420.57 533.996,410.57 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="784.187,347.999 806.538,347.999 806.538,348.005 824.417,348.005 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="816.653,353.005 826.653,348.005 816.653,343.005 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:9.03097;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="610.355" y="304.523">
+    <tspan x="610.355" y="304.523">C-Programm</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:9.03097;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="802.864" y="292.46">
+    <tspan x="802.864" y="292.46">Maschinen-</tspan>
+    <tspan x="802.864" y="303.749">anweisungen</tspan>
+  </text>
+</svg>

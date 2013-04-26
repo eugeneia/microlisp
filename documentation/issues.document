@@ -1,0 +1,13 @@
+< Bugs
+
+ + macro:  invalid expansion of macros in COND, and LAMBDA
+ + runtime/value.c  Leak in garbage collection (?? fixed)
+
+>
+
+< Design
+
+ + microlisp.compile:nextract-functions, microlisp.interpret:evaluate
+   get these right with shared walking
+
+>

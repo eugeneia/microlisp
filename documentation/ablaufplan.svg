@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="21cm" viewBox="250 148 635 975" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="380.175" y="220" width="277.65" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380.175" y="220" width="277.65" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="519" y="242.9">
+      <tspan x="519" y="242.9">Entwicklung der Analysatorkomponente</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="347.625" y="149" width="342.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="347.625" y="149" width="342.75" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="519" y="171.9">
+      <tspan x="519" y="171.9">Planung des Systems und all seiner Komponenten</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="519" y1="187" x2="519" y2="210.264"/>
+    <polygon style="fill: #000000" points="519,217.764 514,207.764 519,210.264 524,207.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="519,217.764 514,207.764 519,210.264 524,207.764 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="267.275" y="335" width="248.3" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="267.275" y="335" width="248.3" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="391.425" y="357.9">
+      <tspan x="391.425" y="357.9">Entwicklung der Makrokomponente</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="527.325" y="334" width="267.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="527.325" y="334" width="267.35" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="661" y="356.9">
+      <tspan x="661" y="356.9">Entwicklung der Emulatorkomponente</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="263.925" y="470.5" width="250.45" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="263.925" y="470.5" width="250.45" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="389.15" y="493.4">
+      <tspan x="389.15" y="493.4">Entwicklung der Standardbibliothek</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="535.5" y="471" width="250.45" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="535.5" y="471" width="250.45" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="660.725" y="493.9">
+      <tspan x="660.725" y="493.9">Entwicklung der Test-Suite</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="884.542" y1="238.716" x2="667.561" y2="238.988"/>
+    <polygon style="fill: #000000" points="660.061,238.997 670.055,233.985 667.561,238.988 670.067,243.985 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="660.061,238.997 670.055,233.985 667.561,238.988 670.067,243.985 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="661,372 661,400.25 521,400.25 521,400.75 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="391.425,373 391.425,400 521,400 521,427 "/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="519,258 519,296.5 391.425,296.5 391.425,325.264 "/>
+    <polygon style="fill: #000000" points="391.425,332.764 386.425,322.764 391.425,325.264 396.425,322.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="391.425,332.764 386.425,322.764 391.425,325.264 396.425,322.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520,296 520,296.581 661,296.581 661,324.264 "/>
+    <polygon style="fill: #000000" points="661,331.764 656,321.764 661,324.264 666,321.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="661,331.764 656,321.764 661,324.264 666,321.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="521,421.75 521,440.25 660.725,440.25 660.725,461.264 "/>
+    <polygon style="fill: #000000" points="660.725,468.764 655.725,458.764 660.725,461.264 665.725,458.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="660.725,468.764 655.725,458.764 660.725,461.264 665.725,458.764 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.5,439.75 520.5,440.25 389.15,440.25 389.15,460.764 "/>
+    <polygon style="fill: #000000" points="389.15,468.264 384.15,458.264 389.15,460.764 394.15,458.264 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="389.15,468.264 384.15,458.264 389.15,460.764 394.15,458.264 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="389.15,508.5 389.15,541.222 520.655,541.222 520.655,564.914 "/>
+    <polygon style="fill: #000000" points="520.655,572.414 515.655,562.414 520.655,564.914 525.655,562.414 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.655,572.414 515.655,562.414 520.655,564.914 525.655,562.414 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="520.655,574.651 644.302,644.588 520.655,714.525 397.008,644.588 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.655,574.651 644.302,644.588 520.655,714.525 397.008,644.588 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="520.655" y="632.488">
+      <tspan x="520.655" y="632.488">Ergebnisse der</tspan>
+      <tspan x="520.655" y="648.488">Test-Suite</tspan>
+      <tspan x="520.655" y="664.488">zufriedenstellend?</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="660.725,509 660.725,541.02 519.691,541.02 519.691,541.02 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="644.302,644.588 644.302,646.379 883,646.379 883,239 "/>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="665" y="632">
+    <tspan x="665" y="632">Nein</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="520.655" y1="714.525" x2="521" y2="759.5"/>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="499.5" y="739.75">
+    <tspan x="499.5" y="739.75">Ja</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="251.6" y="793.25" width="248.8" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="251.6" y="793.25" width="248.8" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="376" y="816.15">
+      <tspan x="376" y="816.15">Entwicklung der Laufzeitumgebung</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="535.25" y="793.25" width="291.5" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="535.25" y="793.25" width="291.5" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="681" y="816.15">
+      <tspan x="681" y="816.15">Entwicklung der Kompilationskomponente</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.828,737.012 520.828,761.25 376,761.25 376,783.514 "/>
+    <polygon style="fill: #000000" points="376,791.014 371,781.014 376,783.514 381,781.014 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="376,791.014 371,781.014 376,783.514 381,781.014 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.828,737.012 520.828,761 681,761 681,783.514 "/>
+    <polygon style="fill: #000000" points="681,791.014 676,781.014 681,783.514 686,781.014 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="681,791.014 676,781.014 681,783.514 686,781.014 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="376,831.25 376,862.25 681,862.25 681,831.25 "/>
+  <g>
+    <polygon style="fill: #ffffff" points="521.525,902.549 652.463,968.018 521.525,1033.49 390.587,968.018 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="521.525,902.549 652.463,968.018 521.525,1033.49 390.587,968.018 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="521.525" y="955.918">
+      <tspan x="521.525" y="955.918">Ergebnisse</tspan>
+      <tspan x="521.525" y="971.918">der Test-Suite</tspan>
+      <tspan x="521.525" y="987.918">zufiredenstellend?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="521.459" y1="862.348" x2="521.509" y2="892.813"/>
+    <polygon style="fill: #000000" points="521.521,900.313 516.505,890.321 521.509,892.813 526.505,890.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="521.521,900.313 516.505,890.321 521.509,892.813 526.505,890.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="652.463,968.018 883.631,968.018 883.631,737.012 530.564,737.012 "/>
+    <polygon style="fill: #000000" points="523.064,737.012 533.064,732.012 530.564,737.012 533.064,742.012 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523.064,737.012 533.064,732.012 530.564,737.012 533.064,742.012 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="669.131" y="949.231">
+    <tspan x="669.131" y="949.231">Nein</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="521.525" y1="1033.49" x2="521.207" y2="1074.1"/>
+    <polygon style="fill: #000000" points="521.148,1081.59 516.227,1071.56 521.207,1074.1 526.226,1071.63 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="521.148,1081.59 516.227,1071.56 521.207,1074.1 526.226,1071.63 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="436.156" y="1083.83" width="169.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="436.156" y="1083.83" width="169.95" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="521.131" y="1106.73">
+      <tspan x="521.131" y="1106.73">Kosten-Nutzen-Analyse</tspan>
+    </text>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:Latin Modern Roman;font-style:normal;font-weight:normal" x="499.631" y="1053.73">
+    <tspan x="499.631" y="1053.73">Ja</tspan>
+  </text>
+</svg>
