@@ -125,7 +125,7 @@
   #code 7.7 Beispiele zu {cell}, {first} und {rest}. Die letzten beiden
   Beispiele funktionieren weil Literale Zeichenkette tatsächlich nur eine
   Schreibweise für Listen von Zeichen ist. {"Joe"} ist also äquivalent zu
-  {(quote (#\J #\o #\e))} und {(cell #\J (cell #\o (cell #\e nil)))}.#
+  {(quote (\#\J \#\o \#\e))} und {(cell \#\J (cell \#\o (cell \#\e nil)))}.#
   (define liste1 (cell 1 nil))    ; liste1 bezeichnet die Liste (1)
   (define liste2
   	  (cell 1 (quote (2 3)))) ; liste2 bezeichnet die Liste (1 2 3)
