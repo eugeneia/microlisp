@@ -6,6 +6,8 @@
 (in-package :microlisp-asd)
 
 (defsystem microlisp
+  :description "A tiny embedded Lisp to ANSI C compiler."
+  :author "Max Rottenkolber <max@mr.gy>"
   :components ((:file "parse")
 	       (:file "macro")
 	       (:file "vocabulary")
