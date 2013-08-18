@@ -14,7 +14,7 @@
       ((feet ft fuß)    304.8))))
 
 ;; unit-identifiers:  Accessor for identifiers for UNIT.
-(define unit-identifiers (lambda (unit)(first unit)))
+(define unit-identifiers (lambda (unit) (first unit)))
 
 ;; unit-scale:  Accessor for scale factor for UNIT.
 (define unit-scale (lambda (unit) (first (rest unit))))
