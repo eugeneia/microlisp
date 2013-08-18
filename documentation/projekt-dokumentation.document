@@ -182,8 +182,9 @@
 
   (defun evaluate (expression environment)
     "Evaluate MicroLisp EXPRESSION in ENVIRONMENT."
-    (evaluate-expanded-expression (expand-expression expression *macros*)
-                                  environment))
+    (evaluate-expanded-expression
+      (expand-expression expression *macros*)
+      environment))
   #
 
   Diese Art der Programmierung hat den Vorteil, dass ausgehend vom
@@ -276,9 +277,11 @@
   #code 3.6 _Konstruktor_ für eine Prozedur.#
 
   (defun make-procedure (lambda-expression environment)
-    "Return new procedure consisting of LAMBDA-EXPRESSION and ENVIRONMENT."
+    "Return new procedure consisting of LAMBDA-EXPRESSION and
+  ENVIRONMENT."
     (unless (lambda-p lambda-expression)
-      (error "~a is not a valid lambda expression." lambda-expression))
+      (error "~a is not a valid lambda expression."
+             lambda-expression))
     (list 'procedure
            lambda-expression
            environment))
@@ -349,6 +352,7 @@
     unsigned long identifier;
     char *name;
   };
+
 
   /* symbol:  Constants and prototypes for symbol functions. */
 
@@ -437,9 +441,9 @@
   Extrahieren von Prozedurdefinitionen.#
 
   (defun nextract-procedures (expanded-expressions)
-    "Extract procedures from EXPANDED-EXPRESSIONS, return procedures and
-     expressions in which procedures are replaced with pointers
-     (desctructively)."
+    "Extract procedures from EXPANDED-EXPRESSIONS, return procedures
+  and expressions in which procedures are replaced with pointers
+  (desctructively)."
     [...])
   #
 
@@ -461,10 +465,9 @@
 
   #code 3.11 Ausschnitt aus der _Test-Suite_.#
 
-  (test
-    (assert "T does not evaluate to itself."
-	    (symbolic= t (quote t)))
-  [...])
+  (test (assert "T does not evaluate to itself."
+	        (symbolic= t (quote t)))
+        [...])
   #
 
   Quelltext 3.11 zeigt einen Ausschnitt aus der _Test-Suite_. Die
