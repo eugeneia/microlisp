@@ -1,4 +1,4 @@
-;;;; microlisp.standard-macros:  Macros for everybody.
+;;;; microlisp.macros.standard:  Macros for everybody.
 
 (defpackage microlisp.macros.standard
   (:use :cl
@@ -12,6 +12,35 @@
 (define-macro if (condition then &optional else)
   `(cond (,condition ,then)
          ((quote t) ,else)))
+
+(defun case-cond (value test-sym cases)
+  "Contruct case COND expression for VALUE, TEST-SYM and CASES."
+  (let ((value-sym (gensym "value")))
+    `(let ((,value-sym ,value))
+       (cond ,@(loop for case in cases
+                  for key = (car case)
+                  for expressions = (cdr case)
+                  collect `((,test-sym ,key ,value-sym)
+                            ,@expressions))))))
+
+;; case-symbolic=:  Evaluate the first expression group in CASES whose
+;; key is SYMBOLIC= to VALUE. If no key is SYMBOLIC= to value return
+;; NIL.
+(define-macro case-symbolic= (value &rest cases)
+  (case-cond value 'symbolic=
+             (loop for case in cases
+                collect (cons `(quote ,(car case)) (cdr case)))))
+
+;; case-numeric=:  Evaluate the first expression group in CASES whose
+;; key is NUMERIC= to VALUE. If no key is NUMERIC= to value return NIL.
+(define-macro case-numeric= (value &rest cases)
+  (case-cond value 'numeric= cases))
+
+;; case-character=:  Evaluate the first expression group in CASES whose
+;; key is CHARACTER= to VALUE. If no key is CHARACTER= to value return
+;; NIL.
+(define-macro case-character= (value &rest cases)
+  (case-cond value 'character= cases))
 
 ;; not:  Negate OBJECT.
 (define-macro not (object)
