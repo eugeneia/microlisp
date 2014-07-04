@@ -50,7 +50,7 @@
   Funktionalität und Korrektheit getestet werden.
 
   #media 1.1 Die Komponenten im Überblick.#
-  komponenten.svg
+  komponenten.png
 
   Abschließend soll angesichts einer Kosten-Nutzen-Analyse getestet
   werden ob die _MicroLisp_-Entwicklungsumgebung die Projektziele erfüllt.
@@ -62,8 +62,8 @@
  < Projektumfeld und Schnittstellen
 
   Die _MicroLisp_-Sprache ist ein _Lisp-Dialekt_. Eine detaillierte
-  Definition der Sprache kann in der _MicroLisp_-Bedienungsanleitung in
-  Anhang 2 [#section-7-2] gefunden werden.
+  Definition der Sprache kann in der _MicroLisp_-Bedienungsanleitung
+  gefunden werden.
 
   _MicroLisp_-Programme sollen in _ANSI C_-Quelltext und von dort aus
   wiederum in Maschinenanweisungen für _Atmel AVR_ \[Atmel AVR\]
@@ -79,7 +79,7 @@
   _C_-Programme in Maschinenanweisungen übersetzen soll.
 
   #media 1.2 Systemlandschaft im Überblick.#
-  systemlandschaft.svg
+  systemlandschaft.png
 
  >
 
@@ -144,7 +144,7 @@
   Erweiterbarkeit verglichen. Anhand dieses Vergleichs soll die
   Rentabilität des _MicroLisp_-Projekts beurteilt werden.
 
-  In Anhang 1 [#section-7-1] wird der oben beschriebene Ablaufplan
+  In Anhang 1 ([#section-5-1]) wird der oben beschriebene Ablaufplan
   durch ein Flussdiagramm visuell dargestellt.
 
   Aus der Ablaufplanung lassen sich mehrere zentrale Termine entnehmen.
@@ -155,7 +155,7 @@
   Projektdokumentation.
 
   #table 2.2 Termine aus der Ablaufplanung.#
-  | Relativer Zeitpunkt | Fertig zu stellende Teilaufgabe
+  | Tag   | Teilaufgabe
   | Tag 2 | Meilenstein 1: Erste repräsentative Ausführungsumgebung
   | Tag 4 | Testphase 1: Analysator-, Makro-, Emulationskomponente und Standardbibliothek
   | Tag 6 | Meilenstein 2: Lauffähige C-Programme können erzeugt werden
@@ -207,7 +207,7 @@
 
   #media 3.2 Interne Repräsentation des _abstrakten Syntaxbaums_.
   Dargestellt durch die so genannte "Box and Pointer"-Notation.#
-  ast.svg
+  ast.png
 
   Nun können Makrokomponente und Emulationskomponente parallel entwickelt
   werden. Weil ich alleine am _MicroLisp_-Projekt arbeite, entscheide ich
@@ -479,11 +479,11 @@
   _Speicherlecks_ aufzudecken. 
 
   Abschließend wird eine Testanwendung sowohl in _MicroLisp_ als auch in
-  _ANSI C_ entwickelt. Die Quelltexte der Testanwendungen {units} und
-  {units-c} sind in Anhang 3 [#section-7-3] hinterlegt. Beide Anwendungen
-  sind vom Funktionsumfang her identisch. Sie interpretieren eine
-  einfache Sprache zum Umwandeln von Längeneinheiten und berichten die
-  Ergebnisse. Um beide Entwicklungsumgebungen zu vergleichen, werden
+  _ANSI C_ entwickelt. Die Quelltexte der Testanwendungen {units.ml} und
+  {units-c.c} sind unter dem Verzeichnis {test/} hinterlegt. Beide
+  Anwendungen sind vom Funktionsumfang her identisch. Sie interpretieren
+  eine einfache Sprache zum Umwandeln von Längeneinheiten und berichten
+  die Ergebnisse. Um beide Entwicklungsumgebungen zu vergleichen, werden
   relevante Merkmale von {units} und {units-c} aus Entwickler- und
   Benutzersicht gemessen.
 
@@ -491,7 +491,7 @@
   zwischen Aufruf und Beendigung des Programs, {user} bezeichnet die Zeit
   die im _Benutzermodus_ und {sys} die Zeit die im
   _Kernelmodus_ verbracht wird.#
-  | Laufzeit | {units} 1x ausgeführt | {units-c} 1x ausgeführt | {units} 1000x ausgeführt | {units-c} 1000x ausgeführt
+  | Laufzeit | {units} 1x | {units-c} 1x | {units} 1000x | {units-c} 1000x
   | {real} | 0.008s | 0.007s | 7.373s | 6.378s
   | {user} | 0.003s | 0.000s | 2.070s | 0.540s
   | {sys}  | 0.003s | 0.000s | 2.976s | 1.193s
@@ -540,8 +540,8 @@
 
   #table 4.1 Abnahmeprotokoll des _MicroLisp_-Projekts. Fehlergrad:
   1 = hoch, 2 = mittel, 3 = niedrig.#
-  | Abnahmekriterium                                       | Ergebnis des Tests (Fehlergrad)
-  | Funktionalität der Softwarekomponenten wird durch_Test-Suite_ bestätigt | Ja
+  | Abnahmekriterium                                       | Ergebnis (Fehlergrad)
+  | Funktionalität durch _Test-Suite_ bestätigt            | Ja
   | Laufzeitkomponente ist Performanzoptimiert             | Nein (3)
   | automatisierte Speicherbereinigung ist funktional      | Ja
   | _Lambda-Calculus_ ist implementiert                    | Ja
@@ -605,562 +605,12 @@
 
 >
 
-< Glossar
-
- #table 5.1 Glossar mit Quellenverweisen.#
- | Begriff                            | Erklärung
- | Abstrakter Syntaxbaum              | "Eine logische Baumstruktur, welche die inhaltlichen Zusammenhänge eines Dokumentes im Sinne eines Syntaxbaumes wiedergibt." \[Wikipedia1\]
- | Assemblersprache                   | "Eine spezielle Programmiersprache, welche die Maschinensprache einer spezifischen Prozessorarchitektur in einer für den Menschen lesbaren Form repräsentiert. Jede Computerarchitektur hat folglich ihre eigene Assemblersprache." \[Wikipedia2\]
- | Ausdruck                           | "Ein Konstrukt, das gemäß einer gegebenen Semantik in Bezug auf einen Kontext ausgewertet werden kann, also einen Wert liefert." \[Wikipedia3\]
- | Axiom                              | Ein atomares, vordefiniertes Element einer Sprache.
- | Benutzermodus                      | Unprivilegierter Ausführungsmodus für Programme.
- | Bezeichner                         | "Ein Identifikator, mit dem ein Programmierer in einem Programm ein Objekt, z. B. einen Datentyp, eine Variable oder eine Funktion, eindeutig benennt." \[Wikipedia4\]
- | BSD                                | "Die Berkeley Software Distribution (BSD) ist eine Version des Betriebssystems Unix, die an der Universität von Kalifornien in Berkeley ab 1977 entstanden ist." \[Wikipedia5\]
- | ANSI C                             | Vom American National Standards Institute standardisierte C Spezifikation.
- | Environment                        | Zuordnung von Bezeichnern und Werten.
- | Funktionsabschluss                 | "Eine Programmfunktion, die beim Aufruf einen Teil ihres Erstellungskontexts reproduziert, selbst wenn dieser Kontext außerhalb der Funktion schon nicht mehr existiert." \[Wikipedia6\]
- | Hashtabelle                        | "Indexstruktur mit konstantem Zeitaufwand bei Einfüge- bzw. Entfernen-Operationen." \[Wikipedia7\]
- | Heap                               | "Ein Speicherbereich, aus dem zur Laufzeit eines Programms zusammenhängende Speicherabschnitte angefordert und in beliebiger Reihenfolge wieder freigegeben werden können." \[Wikipedia8\]
- | Instanz                            | Ein Objekt das zur Laufzeit konstruiert wird.
- | Kernelmodus                        | Privilegierter Ausführungsmodus des Kernels.
- | Konstruktor                        | Prozedur die ein Objekt instanziiert.
- | Laufzeit                           | "Die Zeitspanne, während der ein Programm von einem Rechner ausgeführt wird, und zwar sowohl in Bezug auf die Zeitdauer, die zur Bewältigung einer Aufgabe benötigt wird, als auch zur Beschreibung, dass ein Programm zu einem bestimmten Zeitpunkt gerade ausgeführt wird." \[Wikipedia9\]
- | Laufzeitumgebung                   | "Ein Computerprogramm, das gemeinsam mit einem Anwendungsprogramm, das nicht direkt mit dem Betriebssystem kommunizieren kann, ausgeführt wird und es auf dem jeweiligen Computer lauffähig, also ausführbar macht, indem es zwischen Anwendungsprogramm und Betriebssystem vermittelt." \[Wikipedia10\]
- | lexikalischer Sichtbarkeitsbereich | "Der umgebende Programmtext (die Definition) bestimmt die Bindung \[von Bezeichnern.\]" \[Wikipedia11\]
- | Linux                              | "Freie, UNIX-ähnliche Mehrbenutzer-Betriebssysteme die auf dem Linux-Kernel und wesentlich auf GNU-Software basieren." \[Wikipedia12\]
- | Lisp-Dialekt                       | Eine Programmiersprache auf Basis von Lisp. \[Lisp\]
- | Listenstruktur                     | "Eine dynamische Datenstruktur, die eine Speicherung von einer im Vorhinein nicht bestimmten Anzahl von miteinander in Beziehung stehenden Objekten erlaubt." \[Wikipedia13\]
- | Literal                            | "Eine Zeichenfolge, die zur direkten Darstellung der Werte von Basistypen definiert ist." \[Wikipedia14\]
- | Makro                              | Definition einer Regel zur Manipulation des _Abstrakten Syntaxbaums_.
- | Makroausdruck                      | Ausdruck der von einer _Makroprozedur_ erfasst wird.
- | Makroprozedur                      | Prozedur die Quelltext generiert der einen _Makroausdruck_ ersetzt.
- | Makrosystem                        | Eine Implementation von _Makros_.
- | Makrotabelle                       | Tabelle in der _Makroprozeduren_ und _Makroausdrücke_ zugeordnet werden.
- | MicroLisp                          | Der Name für die zu entwickelnde Programmiersprache.
- | MicroTouch                         | Der Name für die unterliegende Zielplattform. \[MicroTouch]\]
- | Primitiv                           | Einfachstes atomares Basiselement einer Programmiersprache.
- | Referenzzählung                    | "Eine Technik zur Verwaltung der Anzahl der Verweise (Referenzen oder Zeiger) auf ein bestimmtes Objekt." \[Wikipedia15\]
- | Speicheradresse                    | "Identifikator eines Speicherorts auf einem Speichermedium." \[Wikipedia16\]
- | Speicherbereinigung                | "Die Minimierung des Speicheranspruches eines Prozesses, die sowohl während der Software-Entwicklung als auch während der Laufzeit ohne Aufwand stattfindet." \[Wikipedia17\]
- | Speicherleck                       | "Fehler in einem Computerprogramm, die es ermöglichen, dass ein laufender Prozess einen Speicherbereich belegt, diesen jedoch im Zuge der Ausführung weder freigeben noch nutzen kann." \[Wikipedia18\]
- | Speicherzugriffsfehler             | "Wenn ein Computerprogramm auf eine Ressource (insbesondere auf Speicher) zuzugreifen versucht, die vor einem solchen Zugriff geschützt bzw. nicht erreichbar ist." \[Wikipedia19\]
- | Standardbibliothek                 | Eine Sammlung von standardisierten Softwarekomponenten für eine Programmiersprachenimplementation.
- | Symbol                             | Primitiver Datentyp dessen Instanzen eine eindeutige für Menschen lesbare Darstellungsform haben.
- | UNIX                               | Verbreitetes Mehrbenutzerbetriebssystem von Bell Laboratories.
- | Wahrheitswert                      | Binärwert zum angeben des Wahrheitsgrads. 'Wahr' oder 'Falsch'.
- | Zeiger                             | _Bezeichner_ der einer _Speicheradresse_ zugeordnet ist.
-
->
-
-< Quellenverzeichnis
-
- + Lisp [http://de.wikipedia.org/wiki/LISP]
- + MicroTouch [http://ladyada.net/products/microtouch/]
- + Atmel AVR [http://www.atmel.com/products/microcontrollers/avr/default.aspx]
- + Wikipedia1 [http://de.wikipedia.org/wiki/Abstrakter_Syntaxbaum]
- + Wikipedia2 [http://de.wikipedia.org/wiki/Assemblersprache]
- + Wikipedia3 [http://de.wikipedia.org/wiki/Ausdruck_(Programmierung)]
- + Wikipedia4 [http://de.wikipedia.org/wiki/Bezeichner]
- + Wikipedia5 [http://de.wikipedia.org/wiki/Berkeley_Software_Distribution]
- + Wikipedia6 [http://de.wikipedia.org/wiki/Funktionsabschluss]
- + Wikipedia7 [http://de.wikipedia.org/wiki/Hashtabelle]
- + Wikipedia8 [http://de.wikipedia.org/wiki/Dynamischer_Speicher]
- + Wikipedia9 [http://de.wikipedia.org/wiki/Laufzeit_(Informatik)]
- + Wikipedia10 [http://de.wikipedia.org/wiki/Laufzeitumgebung]
- + Wikipedia11 [http://de.wikipedia.org/wiki/Variable_(Programmierung)#Sichtbarkeitsbereich_von_Variablen_.28Scope.29]
- + Wikipedia12 [http://de.wikipedia.org/wiki/Linux]
- + Wikipedia13 [http://de.wikipedia.org/wiki/Liste_(Datenstruktur)]
- + Wikipedia14 [http://de.wikipedia.org/wiki/Literal]
- + Wikipedia15 [http://de.wikipedia.org/wiki/Referenzz%C3%A4hlung]
- + Wikipedia16 [http://de.wikipedia.org/wiki/Speicheradresse]
- + Wikipedia17 [http://de.wikipedia.org/wiki/Speicherbereinigung]
- + Wikipedia18 [http://de.wikipedia.org/wiki/Speicherleck]
- + Wikipedia19 [http://de.wikipedia.org/wiki/Speicherzugriffsfehler]
-
->
-
 < Anhang
 
  < Anhang 1: Ablaufplan als Flussdiagramm
 
   #media 7.1 Geplanter Ablauf im Flussdiagramm.#
-  ablaufplan.svg
-
- >
-
- < Anhang 2: _MicroLisp_-Bedienungsanleitung
-
-  < Die _MicroLisp_-Sprache
-
-   Die _MicroLisp_-Sprache ist ein klassischer Lisp-Dialekt.
-   MicroLisp-Quelltext besteht aus Ausdrücken und Kommentaren. Ein
-   Kommentar beginnt mit einem Semikolon ({;}) und wird durch einen
-   Zeilenumbruch beendet. Kommentare werden ignoriert. Ein Ausdruck ist
-   eine so genannte _S-Expression_ die speziell interpretiert wird.
-
-   Der Begriff _S-Expression_ bezeichnet eine einfache Sprache zum
-   ausdrücken von Datenliteralen. Sie wird in den meisten Lisp-Dialekten,
-   so wie auch in _MicroLisp_, als Repräsentation für Daten und Quelltext
-   benutzt.
-
-   Eine _S-Expression_ ist entweder ein Atom oder eine Liste. Atome sind
-   Literale für Symbole, Zahlen, Zeichen und Zeichenketten. Eine Liste
-   ist eine Folge von _S-Expressions_ umschlossen von Klammerzeichen, {(}
-   und {)}.
-
-   #code 7.4 Beispielhafte _S-Expressions_ mit Kommentaren.#
-
-   ;; Atome:
-   banane         ; Das Symbol banane
-   12             ; Die Zahl 12
-   1/2            ; Die Zahl 0.5
-   #\A            ; Das Zeichen 'A'
-   "Hallo, Welt!" ; Die Zeichenkette 'Hallo, Welt!'
-
-   ;; Listen:
-   (1 2 3)              ; Eine Liste die die Zahlen 1, 2 und 3 beinhaltet
-   ()                   ; Die leere Liste, äquivalent zum Symbol nil
-   (name ("Joe" "Peng") ; Eine Liste die das Symbol name, eine weitere
-    alter 37)           ; Liste aus zwei Zeichenketten, noch ein Symbol
-                        ; alter und die Zahl 37 enthält
-   #
-
-   Quelltextbeispiel 7.4 veranschaulicht den Syntax von _S-Expressions_
-   und verdeutlicht wie atomare Datentypen mithilfe von Listen kombiniert 
-   werden können um Datensätze darzustellen. _MicroLisp_-Ausdrücke sind
-   Datensätze die nach folgenden Regeln interpretiert werden.
-
-   Jeder Ausdruck hat einen Wert. Alle atomaren Datentypen bis auf
-   Symbole, also Zahlen, Zeichen und Zeichenketten, werden als Literale
-   interpretiert. Sie haben also sich selbst als Wert. Symbole werden als
-   Bezeichner interpretiert. Sie haben den Wert an den sie gebunden
-   wurden. Listen werden als Prozeduraufrufe interpretiert. Der Wert des
-   ersten Ausdrucks in der Liste ist die Prozedur und die Werte der
-   restlichen Ausdrücke sind die Argumente, die der Prozedur übergeben
-   werden. Prozeduraufrufe haben ihr Ergebnis als Rückgabewert.
-
-   Bezeichner können mithilfe von zwei Axiomen an Werte gebunden werden.
-   Das {define}-Axiom bindet Bezeichner global an Werte. Ein
-   _MicroLisp_-Programm kann beliebig viele {define}-Ausdrücke haben,
-   diese müssen jedoch zusammen am Anfang des Programms stehen. Das
-   {lambda}-Axiom ermöglicht die Konstruktion von anonymen Prozeduren mit
-   Parametern und einem Rückgabewert. Innerhalb einer Prozedur werden die
-   Bezeichner der Parameter an die übergebenen Werte gebunden.
-
-   #code 7.5 Beispielprogramm zu {define} und {lambda}.#
-
-   ;;; define-Ausdrücke am Anfang des Programms
-   ;; Syntax von define: (define SYMBOL WERT)
-   (define globaler-bezeichner 1)
-   ;; Syntax von lambda: (lambda (SYMBOLE...) AUSDRÜCKE...)
-   (define prozedur (lambda (x) (add x globaler-bezeichner)))
-
-   ;;; Restliche Ausdrücke
-   3                              ; hat den Wert 3
-   globaler-bezeichner            ; hat den Wert 1
-   prozedur                       ; hat eine Prozedur als Wert
-   (prozedur globaler-bezeichner) ; hat den Wert 2
-   #
-
-   {define} übernimmt ein Symbol, das nicht ausgewertet wird, und einen
-   Wert als Parameter. {lambda} übernimmt eine Liste von Symbolen, die
-   ebenfalls unausgewertet bleiben, und eine beliebige Anzahl von
-   Ausdrücken, die zur Zeit des Prozeduraufrufs ausgewertet werden. Der
-   Wert des letzten Ausdrucks ist der Rückgabewert der Prozedur.
-
-   Es gibt zwei weitere Axiome die ihre Parameter nicht wie Prozeduren
-   auswerten. Das primitive Kontrollkonstrukt {cond} und {quote}. {cond}
-   verhält sich wie das klassisch verkettete {IF-ELSE}-Statement. Es
-   übernimmt eine beliebige Anzahl von Listen die Ausdrücke beinhalten als
-   Parameter. Jede Liste stellt einen Fall dar. {cond} durchläuft die
-   Fälle und wertet dabei die Bedingung, den Ersten Ausdruck des Falls,
-   aus. Wenn der Wert der Bedingung nicht das Symbol {nil} ist werden die
-   restlichen Ausdrücke des Falls ausgewertet und der Wert des letzten
-   Ausdrucks ist der Rückgabewert von {cond}. Falls kein Fall zutrifft ist
-   der Rückgabewert von {cond} das Symbol {nil}.
-
-   Das {quote}-Axiom verhält sich wie die Quotation in natürlicher
-   Sprache. Es übernimmt einen Ausdruck und verhindert dessen
-   Auswertung. Es ermöglicht die Darstellung von literalen Listen und
-   Symbolen innerhalb Ausdrücken.
-
-   #code 7.6 Beispiele zu {cond} und {quote}. Das Symbol wird {t}
-   konventionell als positiver Wahrheitswert benutzt. Tatsächlich ist aber
-   nur ein Wert "falsch" und zwar das Symbol {nil}, beziehungsweise die
-   leere Liste.#
-
-   ;; Beispiele zu cond
-   (cond (nil "Falsch")   ; gibt "Wahr zurück"
-         (t "Wahr"))
-   (cond (12 "Nicht nil") ; gibt "Nicht nil" zurück
-         (t "Wahr"))
-   (cond (nil "Falsch"))  ; gibt nil zurück
-
-   ;; Beispiele zu quote
-   (quote banane)  ; gibt das Symbol banane zurück
-   (quote (1 2 3)) ; gibt eine Liste die die Zahlen 1, 2 und 3 beinhaltet
-                   ; zurück
-   #
-
-   Die {cond}-Ausdrücke in Beispielquelltext 7.6 funktionieren, weil die
-   Bezeichner {nil} und {t} standardmäßig an die Symbole {nil} und {t}
-   gebunden sind. Alternativ hätte auch {(quote nil)} und {(quote t)}
-   geschrieben werden können.
-
-   Zur dynamischen Erzeugung von Listen werden drei Axiome {cell}, {first}
-   und {rest} zur Verfügung gestellt. {cell} übernimmt einen beliebigen
-   Wert und eine Liste als Parameter und gibt eine Liste zurück. Die
-   resultierende Liste besteht aus dem übergebenen Wert und dem Inhalt
-   der übergebenen Liste. {first} und {rest} übernehmen eine Liste als
-   Parameter und geben jeweils das erste Element und die restlichen
-   Elemente der Liste zurück.
-
-   #code 7.7 Beispiele zu {cell}, {first} und {rest}. Die letzten beiden
-   Beispiele funktionieren weil Literale Zeichenkette tatsächlich nur eine
-   Schreibweise für Listen von Zeichen ist. {"Joe"} ist also äquivalent zu
-   {(quote (\#\\J \#\\o \#\\e))} und
-   {(cell \#\\J (cell \#\\o (cell \#\\e nil)))}.#
-
-   (define liste1 (cell 1 nil))    ; liste1 bezeichnet die Liste (1)
-   (define liste2
-   	   (cell 1 (quote (2 3)))) ; liste2 bezeichnet die Liste (1 2 3)
-   (first nil)                     ; gibt nil zurück
-   (rest nil)                      ; gibt nil zurück
-   (first liste1)                  ; gibt die Zahl 1 zurück
-   (rest liste1)                   ; gibt das Symbol nil zurück 
-   (rest liste2)                   ; gibt die Liste (2 3) zurück
-   (first (rest liste2))           ; gibt die Zahl 2 zurück
-   (first "Joe")                   ; gibt das Zeichen 'J' zurück
-   (rest "Joe")                    ; gibt die Zeichenkette "oe" zurück,
-                                   ; bzw. eine Liste die die Zeichen 'o'
-                                   ; und 'e' enthält 
-   #
-
-   Für die Datentypen der Sprache sind primitive Prädikate vordefiniert.
-   {procedure?}, {cell?}, {symbol?}, {number?} und {character?} übernehmen
-   jeweils einen Wert und geben das Symbol {nil} zurück wenn der
-   entsprechende Typ nicht mit dem Typ des Wertes übereinstimmt.
-   {symbolic=}, {numeric=} und {character=} übernehmen jeweils zwei
-   Werte des entsprechenden Typs und geben das Symbol {nil} zurück wenn 
-   die übergebenen Werte nicht äquivalent sind.
-
-   Für Zahlen gibt es zusätzlich das Vergleichsprädikat {numeric>} welches
-   zwei Zahlen übernimmt und das Symbol {nil} zurück gibt wenn die erste
-   übergebene Zahl nicht größer ist als die zweite übergebene Zahl.
-   Außerdem können zwei Zahlen mit den Axiomen {add}, {subtract},
-   {multiply} und {divide} jeweils addiert, subtrahiert, multipliziert und
-   dividiert werden. {modulo} dividiert zwei Zahlen mit Rest und gibt den
-   Rest zurück.
-
-   Für Ein- und Ausgabe werden die Axiome {read}, {write} und {delete}
-   zur Verfügung gestellt. {read} übernimmt eine Quelle und gibt einen
-   Wert zurück. Eine Quelle ist eine Liste die Zeichenketten beinhaltet
-   und designiert einen Dateipfad oder die Standardein- oder Ausgabe im
-   Fall der leeren Liste ({nil}). {read} liest einen Wert aus der
-   angegebenen Quelle und gibt es zurück. Im Falle eines Fehlers wird das
-   Symbol {nil} zurückgegeben. {write} übernimmt einen Wert und eine
-   Quelle und schreibt den Wert in die angegebene Quelle. Wenn ein Fehler
-   beim Schreiben auftritt gibt {write} das Symbol {nil} zurück. {delete}
-   übernimmt eine Quelle und löscht den dort persistierten Wert. Wenn der
-   Löschvorgang nicht erfolgreich war gibt {delete} das Symbol {nil}
-   zurück.
-
-   Damit sind alle Regeln und Axiome der _MicroLisp_-Sprache definiert.
-   Alles andere wird durch Kombination der Erkärten Axiome definiert.
-
-  >
-
-  < Die _MicroLisp_-Entwicklungsumgebung
-
-   Die _MicroLisp_-Entwicklungsumgebung stellt zwei Befehle für die
-   interaktive Auswertung von Ausdrücken zur Verfügung. {evaluate}
-   übernimmt einen Ausdruck als Parameter und gibt seinen Wert zurück und
-   {include} übernimmt eine Quelltextdatei und wertet sie aus.
-
-   Für die Kompilation von Quelltextdateien nach _ANSI C_ gibt es den
-   {compile-files}-Befehl. Er übernimmt eine beliebige Anzahl von
-   Quelltextdateien und generiert ein entsprechendes _C_-Programm. Das
-   resultierende _C_-Programm hat den Namen der letzten Quelltextdatei mit
-   der Endung {.c}.
-
-   Der {define-macro} Befehl dient zur Definition von Makros. Makros
-   müssen in _Common Lisp_ Kodiert werden. {define-macro} übernimmt ein
-   Symbol, eine Lambda-Liste und einen Prozedurkörper. Das Symbol dient
-   als Name unter dem die Makroprozedur, die durch die Lambda-Liste und
-   den Prozedurkörper definiert wird, registriert wird. Bevor Ausdrücke
-   Ausgewertet oder Kompiliert werden, werden gegebenenfalls
-   Makroausdrücke mit Ausdrücken ersetzt, die von den entsprechenden
-   Makroprozeduren generiert wurden.
-
-   #code 7.7 Beispielhafte Makrodefinition von {if}.#
-
-   ;; if:  Wenn CONDITION nicht nil ist wird THEN ausgewertet, ansonsten
-   ;; wird ELSE ausgewertet.
-   (define-macro if (condition then &optional else)
-     `(cond (,condition ,then)
-            (t ,else)))
-
-   ;; Wenn das if-Makro definiert ist würde beispielsweise der Ausdruck
-   ;; (if (numeric> 2 1) 3 4) zu (cond ((numeric> 2 1) 3) (t 4))
-   ;; ausgedehnt werden.
-   #
-
-  >
-
- >
-
- < Anhang 3: Testanwendungen für die Durchführung der
-   Kosten-Nutzen-Analyse
-
-  #code 7.8 Quelltext der _MicroLisp_-Testanwendung {units}.#
-
-  ;;;; units:  A simple language to convert units.
-  ;;;; It reads a query in the form of
-  ;;;;   ((value unit-identifier) target-unit-identifiers...)
-  ;;;; and returns conversion results for value from unit to target-units.
-  ;;;; Depends on includes/standard.ml.
-
-  ;; units:  Table of units.
-  (define units
-      (quote
-       (((millimeter mm)    1)
-        ((centimeter cm)   10)
-        ((meter m)       1000)
-        ((inch in zoll)    25.4)
-        ((feet ft fuß)    304.8))))
-
-  ;; unit-identifiers:  Accessor for identifiers for UNIT.
-  (define unit-identifiers (lambda (unit)(first unit)))
-
-  ;; unit-scale:  Accessor for scale factor for UNIT.
-  (define unit-scale (lambda (unit) (first (rest unit))))
-
-  ;; find-identifier:  Find IDENTIFIER in LIST.
-  (define find-identifier
-      (lambda (identifier list)
-        (find (lambda (member) (symbolic= member identifier))
-              list)))
-
-  ;; find-unit:  Find unit by UNIT-IDENTIFIER in UNITS.
-  (define find-unit
-      (lambda (unit-identifier units)
-        (find (lambda (unit)
-                (find-identifier unit-identifier (unit-identifiers unit)))
-              units)))
-
-  ;; length-value:  Accessor for value of LENGTH.
-  (define length-value (lambda (length) (first length)))
-
-  ;; length-unit-identifier:  Accessor for unit-identifier of LENGTH.
-  (define length-unit-identifier (lambda (length) (first (rest length))))
-
-  ;; convert:  Convert VALUE from UNIT to TARGET-UNIT.
-  (define convert
-      (lambda (value unit target-unit)
-        (/ (* (unit-scale unit) value)
-           (unit-scale target-unit))))
-
-  ;; query-length:  Accessor for length of QUERY.
-  (define query-length (lambda (query) (first query)))
-
-  ;; query-target-unit-identifiers: Accessor for target-unit-identifiers
-  ;; of QUERY.
-  (define query-target-unit-identifiers (lambda (query) (rest query)))
-
-  ;; query-valid?:  Returns nil if QUERY is syntactically invalid.
-  (define query-valid?
-      (lambda (query)
-        (and (cell? query)
-             (let ((length (query-length query))
-                   (target-unit-identifiers
-                    (query-target-unit-identifiers query)))
-               (and (number? (length-value length))
-                    (symbol? (length-unit-identifier length))
-                    (cell? target-unit-identifiers)
-                    (not (find (lambda (identifier)
-                                 (not (symbol? identifier)))    
-                               target-unit-identifiers)))))))
-
-  ;; interpret-query:  Interpret QUERY and return result.
-  (define interpret-query
-      (lambda (query)
-        (let ((value (length-value (query-length query)))
-              (unit (find-unit (length-unit-identifier
-                                (query-length query))
-                               units))
-              (target-unit-identifiers
-               (query-target-unit-identifiers query)))
-          (map (lambda (target-unit-identifier)
-                 (let ((target-unit
-                        (find-unit target-unit-identifier units)))
-                   (if (and unit target-unit)
-                       (list (convert value unit target-unit)
-                             target-unit-identifier)
-                       (quote unknown-unit-identifier))))
-               target-unit-identifiers))))
-
-  (let ((query (read nil)))
-    (write (if (query-valid? query)
-               (interpret-query query)
-               (quote invalid-query))
-           nil))
-  #
-
-  #code 7.9 Quelltext der _ANSI C_-Testanwendung {units-c}.#
-
-  /* units-c:  A simple language to convert units in C.
-     It reads queries in the form of
-       value unit-identifier target-unit-identifiers...
-     from stdin and prints conversion results of value from unit to target
-     units. */
-
-  #include <stdlib.h>
-  #include <stdio.h>
-  #include <string.h>
-
-  #define UNIT_IDENTIFIER_LENGTH 255
-  #define UNITS_LENGTH 6
-  #define MAX_UNIT_IDENTIFIERS 5
-
-  /* enum unit:  Enumeration for units. */
-  enum unit { UNKNOWN, MM, CM, M, IN, FT };
-
-  /* unit:  Structured unit type.*/
-  typedef struct {
-    float scale;
-    unsigned unit_identifiers_n;
-    char *unit_identifiers[MAX_UNIT_IDENTIFIERS];
-  } unit;
-
-  /* units:  Unit table. */
-  unit units[UNITS_LENGTH];
-
-  /* struct unit_identifier_cell:  Cell structure for list of
-     unit_identifiers. */
-  struct unit_identifier_cell {
-    char unit_identifier[UNIT_IDENTIFIER_LENGTH];
-    struct unit_identifier_cell *next;
-  };
-
-  /* unit_identifiers:  Type for list of unit_identifiers. */
-  typedef struct unit_identifier_cell *unit_identifiers;
-
-  /* initialze_units:  Unit table initialization. */
-  void initialize_units (void) {
-    units[MM].scale = 1;
-    units[MM].unit_identifiers_n = 2;
-    units[MM].unit_identifiers[0] = "millimeter";
-    units[MM].unit_identifiers[1] = "mm";
-
-    units[CM].scale = 10;
-    units[CM].unit_identifiers_n = 2;
-    units[CM].unit_identifiers[0] = "centimeter";
-    units[CM].unit_identifiers[1] = "cm";
-
-    units[M].scale = 1000;
-    units[M].unit_identifiers_n = 2;
-    units[M].unit_identifiers[0] = "meter";
-    units[M].unit_identifiers[1] = "m";
-
-    units[IN].scale = 25.4;
-    units[IN].unit_identifiers_n = 3;
-    units[IN].unit_identifiers[0] = "inch";
-    units[IN].unit_identifiers[1] = "in";
-    units[IN].unit_identifiers[2] = "zoll";
-
-    units[FT].scale = 304.8;
-    units[FT].unit_identifiers_n = 3;
-    units[FT].unit_identifiers[0] = "feet";
-    units[FT].unit_identifiers[1] = "ft";
-    units[FT].unit_identifiers[2] = "fuß";
-  }
-
-  /* find_unit:  Find unit matching unit_identifier. Return index if found
-     and -1 otherwise. */
-  enum unit find_unit (char *unit_identifier) {
-    enum unit i;
-    unsigned j;
-
-    for (i = MM; i < UNITS_LENGTH; i += 1)
-      for (j = 0; j < units[i].unit_identifiers_n; j += 1)
-        if (strcmp(units[i].unit_identifiers[j], unit_identifier) == 0)
-          return i;
-
-    return UNKNOWN;
-  }
-
-  /* convert:  Convert value from unit specified by unit_index to unit
-     specified by target_unit_index. */
-  float convert (float value,
-                 enum unit unit_index,
-                 enum unit target_unit_index) {
-    return (value * units[unit_index].scale)
-      / units[target_unit_index].scale;
-  }
-
-  /* interpret_query:  Interpret query (convert value from unit specified
-     by unit_identifier to units specified by target_unit_identifiers) and
-     print results. */
-  void interpret_query (float value, char *unit_identifier,
-                        unit_identifiers target_unit_identifiers) {
-    enum unit
-      unit_index = find_unit(unit_identifier),
-      target_unit_index;
-
-    if (unit_index == UNKNOWN) {
-      fprintf(stderr, "unknown unit identifier\n");
-      exit(-1);
-    }
-
-    for (; target_unit_identifiers != NULL;
-         target_unit_identifiers = target_unit_identifiers->next)
-      if ((target_unit_index
-           = find_unit(target_unit_identifiers->unit_identifier))
-          == UNKNOWN) {
-        fprintf(stderr, "unknown unit identifier\n");
-      } else printf("%f %s\n",
-                    convert(value, unit_index, target_unit_index),
-                    target_unit_identifiers->unit_identifier);
-  }
-
-  int main (void) {
-    float value;
-    char
-      unit_identifier[UNIT_IDENTIFIER_LENGTH],
-      temp_unit_identifier[UNIT_IDENTIFIER_LENGTH];
-    unit_identifiers
-      target_unit_identifiers = NULL,
-      head;
-    
-    initialize_units();
-    
-    if (scanf("%f %s", &value, unit_identifier) != 2) {
-      fprintf(stderr, "invalid query\n");
-      exit(-1);
-    }
-
-    while(scanf("%s", temp_unit_identifier) == 1) {
-      if (target_unit_identifiers == NULL) {
-        target_unit_identifiers = malloc(sizeof(unit_identifiers));
-        head = target_unit_identifiers;
-      } else {
-        head->next = malloc(sizeof(unit_identifiers));
-        head = head->next;
-      }
-      strcpy(head->unit_identifier, temp_unit_identifier);
-    }
-    head->next = NULL;
-    
-    if (target_unit_identifiers == NULL) {
-      fprintf(stderr, "invalid query (no output units)\n");
-      exit(-1);
-    }
-
-    interpret_query(value, unit_identifier, target_unit_identifiers);
-
-    return 0;
-  }
-  #
+  ablaufplan.png
 
  >
 
